@@ -245,6 +245,7 @@ ul {
             border-radius: 10px;
             border: 1px solid var(--Dark-grey);
             outline: none;
+            font-size: 24px;
         }
         ::placeholder{
             font-family: 'one';
@@ -257,6 +258,10 @@ ul {
         padding: 10px 20px;
         border-radius: 10px;
         border: 1px solid var(--Black);
+    }
+    .btn:hover{
+        transition: 0.2s ease-in;
+        background-color: aquamarine;
     }
 
 }
