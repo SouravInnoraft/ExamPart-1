@@ -1,0 +1,262 @@
+
+@font-face {
+    font-family: "one";
+    src: url(./parallel/WorkSans-Medium.woff);
+}
+@font-face {
+    font-family:"two";
+    src: url(./parallel/WorkSans-Regular.woff);
+}
+@font-face {
+    font-family: "three";
+    src: url(./parallel/WorkSans-SemiBold.woff);
+}
+@font-face {
+    font-family: "four";
+    src: url(./parallel/SharpGrotesk-Medium.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Black: #000000;
+    --Grey: #D2D2D2;
+    --White: #ffffff;
+    --Yellow: #FFD560;
+    --Dark-grey: #979797;
+    --Cream: #FFF7F1;
+}
+
+/* body {
+    font-family: 'WorkSans-Medium', sans-serif;
+    font-family: 'WorkSans-Regular', sans-serif;
+    font-family: 'WorkSans-SemiBold', sans-serif;
+} */
+
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    /* padding-inline: 30px; */
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--Black);
+    font-family: 'three';
+    
+}
+
+ul {
+    list-style: none;
+}
+
+/* end of element and global stylings */
+/* flex */
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+/* flex */
+
+/* section-1 */
+.logo-container {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    margin-right: 25px;
+}
+
+.left {
+    li {
+        margin-inline: 15px;
+    }
+
+    a {
+        padding-block: 26px;
+    }
+     a:hover{
+        transition: 0.2s ease-in;
+        color: aquamarine;
+    }
+
+}
+
+.right {
+    a:hover{
+        transition: 0.2s ease-in;
+        color: aquamarine;
+    }
+
+    .getStarted {
+        align-self: center;
+
+        a {
+            background-color: var(--Yellow);
+            padding: 12px 30px;
+            border: 1px solid var(--Black);
+            border-radius: 5px;
+        }
+        a:hover{
+            transition: 0.2s ease-in;
+        color: white;
+        background-color: aquamarine;
+        }
+
+    }
+
+    .company {
+        a {
+            padding-block: 26px;
+        }
+
+        span {
+            padding-inline: 40px;
+            border-right: 1px solid var(--Grey);
+        }
+
+
+    }
+
+    .sign {
+        a {
+            padding-block: 26px;
+        }
+
+        span {
+            padding-inline: 40px;
+        }
+
+        margin-right: 25px;
+    }
+}
+
+/* section-2 */
+.categories {
+    padding-block: 50px;
+    background-color: var(--Cream);
+    height: 800px;
+
+
+    .categories-items {
+        li {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-inline: 10px;
+        }
+
+        li>a {
+            padding: 8px 14px;
+            border: 1px solid var(--Grey);
+            border-radius: 30px;
+        }
+
+        a:hover {
+            transition: 0.2s ease-in;
+            background-color: var(--Yellow);
+        }
+    }
+}
+
+/*banner */
+.banner-items {
+    position: relative;
+}
+
+.banner-left-header {
+    position: absolute;
+    top: 40px;
+
+    h2 {
+        font-size: 24px;
+        font-family: 'four';
+        margin-bottom: 12px;
+    }
+}
+
+.banner-left-image-1 {
+    position: absolute;
+    top: 135px;
+    z-index: 2;
+}
+
+.banner-left-image-2 {
+    position: absolute;
+    top: 315px;
+    z-index: 2;
+}
+
+.banner-middle {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, 15%);
+}
+
+.banner-right-header {
+    position: absolute;
+    right: 6.5%;
+    top: 154px;
+
+    h2 {
+        font-family: 'four';
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 2.75rem;
+
+    }
+}
+
+.banner-right-input {
+    position: absolute;
+    right: 2%;
+    top: 370px;
+
+    p {
+
+        /* font-weight: 600; */
+        font-size:24px;
+        font-family: 'four';
+        margin-block: 20px;
+    }
+
+    .input {
+        margin-block: 20px;
+
+        input {
+            padding: 10px;
+            height: 50px;
+            width: 360px;
+            border-radius: 10px;
+            border: 1px solid var(--Dark-grey);
+            outline: none;
+        }
+        ::placeholder{
+            font-family: 'one';
+            font-size: 24px;
+        }
+    }
+
+    .btn {
+        background-color: var(--Yellow);
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--Black);
+    }
+
+}
